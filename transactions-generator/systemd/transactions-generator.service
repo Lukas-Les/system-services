@@ -1,0 +1,13 @@
+[Unit]
+Description=Simple Rust Logging Service
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/transactions-generator
+Restart=always
+User=stabmeldys
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

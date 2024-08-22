@@ -27,8 +27,8 @@ impl Transaction {
     pub fn run(&self) {
         info!("Started: {}", &self.id);
         let mut rng = rand::thread_rng();
-        let dur: u64 = rng.gen_range(500..5000);
-        sleep(time::Duration::from_millis(dur));
+        let dur: u64 = rng.gen_range(1..10);
+        sleep(time::Duration::from_secs(dur));
         info!("Finnished: {}", &self.id);
     }
 }
