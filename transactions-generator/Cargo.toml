@@ -4,5 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+hex = "0.4.3"
 log = "0.4.22"
+rand = "0.8.5"
 systemd-journal-logger = "2.1.1"
